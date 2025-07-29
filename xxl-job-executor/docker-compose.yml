@@ -1,0 +1,28 @@
+version: '2'
+
+services:
+  executor-default-1:
+    image: "hyb/xxl-job-executor:2.5.0"
+    build: "./image/"
+    container_name: "executor-default-1"
+    ports:
+      - "18081:18081"
+      - "19091:19091"
+    volumes:
+      - ./executors/executor-default/node-1/logs:/data/applogs
+      - ./executors/executor-default/node-1/application.properties:/application.properties
+#      - /etc/localtime:/etc/localtime
+#    restart: always
+
+  executor-default-2:
+    image: "hyb/xxl-job-executor:2.5.0"
+    build: "./image/"
+    container_name: "executor-default-2"
+    ports:
+      - "18082:18082"
+      - "19092:19092"
+    volumes:
+      - ./executors/executor-default/node-2/logs:/data/applogs
+      - ./executors/executor-default/node-2/application.properties:/application.properties
+#      - /etc/localtime:/etc/localtime
+#    restart: always

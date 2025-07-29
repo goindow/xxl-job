@@ -1,0 +1,14 @@
+version: '2'
+
+services:
+  xxl-job-admin:
+    image: "hyb/xxl-job-admin:2.5.0"
+    build: "./image/"
+    container_name: "xxl-job-admin"
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./logs:/data/applogs
+      - ./conf/application.properties:/application.properties
+#      - /etc/localtime:/etc/localtime
+#    restart: always
