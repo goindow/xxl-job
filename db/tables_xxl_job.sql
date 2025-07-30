@@ -34,7 +34,7 @@ CREATE TABLE `xxl_job_info`
     `trigger_last_time`         bigint(13)   NOT NULL DEFAULT '0' COMMENT '上次调度时间',
     `trigger_next_time`         bigint(13)   NOT NULL DEFAULT '0' COMMENT '下次调度时间',
     PRIMARY KEY (`id`)
-    UNIQUE KEY `unique_idx` (`job_group`,`job_desc`) USING BTREE COMMENT '同一个环境下的任务描述不能相同'
+    UNIQUE KEY `unique_idx` (`job_group`,`job_desc`) USING BTREE COMMENT '同一个执行器下的任务描述不能相同'
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;
 
