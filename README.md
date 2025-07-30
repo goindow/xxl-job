@@ -13,9 +13,10 @@
 
 
 ## 目录说明
-- db，数据库初始化脚本
-- xxl-job-admin，调度中心相关目录
-- xxl-job-executor，执行器相关目录
+- db/，数据库初始化脚本
+- xxl-job-admin/，调度中心相关目录
+- xxl-job-executor/，执行器相关目录
+- screenshot/，readme 图床，下载后可删除该目录
 
 详细目录结构如下，
 
