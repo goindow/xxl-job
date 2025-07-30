@@ -19,7 +19,7 @@
 
 详细目录结构如下，
 
-![image.png](https://github.com/goindow/xxl-job/blob/main/screenshot/1.png)
+![image.png](https://raw.githubusercontent.com/goindow/xxl-job/refs/heads/main/screenshot/1.jpg)
 
 
 ## 部署步骤
@@ -52,7 +52,7 @@ docker-compose up -d --build
 > 地址: `http://192.168.0.100`
 > 账号: `admin/123456`
 
-![image.png](https://github.com/goindow/xxl-job/blob/main/screenshot/2.png)
+![image.png](https://raw.githubusercontent.com/goindow/xxl-job/refs/heads/main/screenshot/2.jpg)
 
 
 5. 部署「执行器」（***假设宿主机 ip 为 192.168.0.103，部署两个节点***）
@@ -136,4 +136,4 @@ docker-compose up -d --build
 > 地址: `http://192.168.0.100`
 > 账号: `admin/123456`
 
-![image.png](https://github.com/goindow/xxl-job/blob/main/screenshot/3.png)
+![image.png](https://raw.githubusercontent.com/goindow/xxl-job/refs/heads/main/screenshot/3.jpg)
