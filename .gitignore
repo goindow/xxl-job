@@ -1,0 +1,2 @@
+xxl-job-admin/logs/xxl-job/*
+xxl-job-executor/executors/executor-default/node-*/logs/xxl-job/*
