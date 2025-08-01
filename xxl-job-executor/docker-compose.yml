@@ -2,7 +2,6 @@ version: '2'
 
 services:
   executor-default-1:
-    image: "hyb/xxl-job-executor:2.5.0"
     build: "./image/"
     container_name: "executor-default-1"
     ports:
@@ -15,7 +14,6 @@ services:
 #    restart: always
 
   executor-default-2:
-    image: "hyb/xxl-job-executor:2.5.0"
     build: "./image/"
     container_name: "executor-default-2"
     ports:

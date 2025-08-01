@@ -2,7 +2,6 @@ version: '2'
 
 services:
   xxl-job-admin:
-    image: "hyb/xxl-job-admin:2.5.0"
     build: "./image/"
     container_name: "xxl-job-admin"
     ports:
